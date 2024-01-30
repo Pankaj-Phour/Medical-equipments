@@ -1,0 +1,44 @@
+<div class="body">
+    <div class="navbar">
+        <div class="left">
+            <img src="/assets/logo.png" height="55" width="50" style="cursor: pointer;" (click)="reload()">
+        </div>
+        <div class="right">
+            <div class="list">
+                <div class="item" routerLink="/about">Home</div>
+                <div class="item" routerLink="/about">Our Products</div>
+                <div class="item" routerLink="/projects">About us</div>
+                <div class="item" routerLink="/contact">Contact us</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="device" [ngStyle]="{'height':navOpen ? '600px' : '60px'}">
+	<div class="container">
+		<div class="left">
+            <img src="/assets/logo.png" height="55" width="50" style="cursor: pointer;" (click)="reload()">
+        </div>
+		<button id="burger" class="open-main-nav" (click)="toggleNav()" [ngStyle]="{'padding-top': navOpen ? '0px' : ''}">
+			<span class="burger" *ngIf="!navOpen"></span>
+            <div class="crossIcon" *ngIf="navOpen" style="padding-top: 0px;"><img src="/assets/cross.png" height="30" width="30" ></div>
+			<!-- <span class="burger-text">Menu</span> -->
+		</button>
+		<nav class="main-nav" id="main-nav">
+			<ul>
+				<li>
+					<p>Home</p>
+				</li>
+				<li>
+					<p>Our Products</p>
+				</li>
+				<li>
+					<p>About us</p>
+				</li>
+				<li routerLink="/contact">
+					<p>Contact us</p>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
