@@ -1,5 +1,7 @@
 .body,.device{
     font-family: 'Roboto';
+	position: sticky;
+	top: 0%;
 }
 .navbar{
     width: 100%;
@@ -9,7 +11,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    // background-color: black;
+    background-color: #E7E7E7;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     padding-block: 10px;
     // box-sizing: border-box;
@@ -89,7 +92,8 @@
     bottom: 0;
     text-align: center;
     // background: #FFF;
-    background: #378c78;
+    // background: #378c78;
+    background: white;
     opacity: 0;
     z-index: -1;
     visibility: hidden;
@@ -112,7 +116,8 @@
     left: 0;
     right: -15px;
     // background: #FEDC2A;
-    background: black;
+    // background: black;
+    background: #E7E7E7;
     transform-origin: 0 0;
     transform: skew(-14deg) translateX(-120%);
     transition: all .275s .1s;
@@ -256,12 +261,13 @@
 }
 
 .device {
-	position: relative;
+	position: sticky;
 	// width: 345px;
 	width: 100vw;
 	height: 600px;
 	// background: #FFF;
-	background: #378c78;
+	// background: #378c78;
+	background: #E7E7E7;
 	// border: 1px solid #EEE;
 	// border-radius: 3px;
 	// box-shadow: 0 0 0 10px rgba(0,0,0,.1);
@@ -274,7 +280,8 @@
 	bottom: 0; left: 0;
 	overflow: hidden;
 	// background: linear-gradient(to bottom, #eee, #ddd);
-	background: black;
+	// background: black;
+	background: #E7E7E7;
 	display: flex;
 	align-items: center;
 }

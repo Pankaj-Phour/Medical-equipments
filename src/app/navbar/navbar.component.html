@@ -5,9 +5,9 @@
         </div>
         <div class="right">
             <div class="list">
-                <div class="item" routerLink="/about">Home</div>
-                <div class="item" routerLink="/about">Our Products</div>
-                <div class="item" routerLink="/projects">About us</div>
+                <div class="item" routerLink="/">Home</div>
+                <div class="item" routerLink="/products">Our Products</div>
+                <div class="item" routerLink="/about">About us</div>
                 <div class="item" routerLink="/contact">Contact us</div>
             </div>
         </div>
@@ -26,16 +26,16 @@
 		</button>
 		<nav class="main-nav" id="main-nav">
 			<ul>
-				<li>
+				<li routerLink="/" (click)="toggleNav()">
 					<p>Home</p>
 				</li>
-				<li>
+				<li routerLink="/products" (click)="toggleNav()">
 					<p>Our Products</p>
 				</li>
-				<li>
+				<li routerLink="/about" (click)="toggleNav()">
 					<p>About us</p>
 				</li>
-				<li routerLink="/contact">
+				<li routerLink="/contact" (click)="toggleNav()">
 					<p>Contact us</p>
 				</li>
 			</ul>
