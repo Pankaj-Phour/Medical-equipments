@@ -33,7 +33,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: #246362;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -57,16 +57,16 @@
 }
 .resumebtn a{
 	text-decoration: none;
-	color: white;
+	color: #246362;
 }
 .resumebtn a:hover{
 	text-decoration: none;
-	color: white;
+	color: #246362;
 }
 .resumebtn:hover{
     box-shadow: rgba(83, 172, 31, 0.56) 0px 3px 6px 2px;
     background-color: #378c78;
-    color: white;
+    color: #246362;
     // border: 2px solid black;
 }
 
@@ -93,7 +93,7 @@
     text-align: center;
     // background: #FFF;
     // background: #378c78;
-    background: white;
+    background: #246362;
     opacity: 0;
     z-index: -1;
     visibility: hidden;
