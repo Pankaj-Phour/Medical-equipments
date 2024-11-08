@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { AboutComponent } from './about/about.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

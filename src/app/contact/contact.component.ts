@@ -42,14 +42,16 @@ formValidation(){
   }
 
   contact(index:any){
-    if(index == 0){
-      window.open("https://github.com/Pankaj-Phour","_blank")
-    }
-    else if(index == 1){
-      window.open("mailTo:pankaj.phour70@gmail.com","_blank")
-    }
-    else if(index == 2){
-      window.open("https://wa.me/919518455298","_blank")
-    }
+    console.log("DO NOTHING FOR NOW");
+    
+    // if(index == 0){
+    //   window.open("https://github.com/Pankaj-Phour","_blank")
+    // }
+    // else if(index == 1){
+    //   window.open("mailTo:pankaj.phour70@gmail.com","_blank")
+    // }
+    // else if(index == 2){
+    //   window.open("https://wa.me/919518455298","_blank")
+    // }
   }
 }

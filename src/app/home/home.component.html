@@ -1,1 +1,93 @@
-<p>home works!</p>
+<div class="parent">
+    <div class="section upper">
+        <div class="content">
+            <div class="heading">
+                Unparalleled
+            </div>
+            <div class="heading">
+                Commitment
+            </div>
+            <div class="text">
+                Meet Zymes. Visionary striving to provide innovative therepies for accurate and life-threatning illnesses.
+            </div>
+        </div>
+    </div>
+    <div class="section second">
+        <div class="content">
+            <div class="box left">
+                <div class="boxcontent">
+
+                    <div class="topImage">
+                        <img src="assets/innerBox1.webp">
+                    </div>
+                    <div class="bottomHeading">
+                        Our Impact
+                    </div>
+                    <div class="bottomText">
+                        Our innovation in antibiotic therapy has helped medical fraternity for effective medical treatment.
+                    </div>
+                </div>
+            </div>
+            <div class="box right">
+                <div class="boxcontent">
+
+                    <div class="topImage">
+                        <img src="assets/innerBox2.webp">
+                    </div>
+                    <div class="bottomHeading">
+                        Our Products
+                    </div>
+                    <div class="bottomText">
+                        Our innovation in antibiotic therapy has helped medical fraternity for effective medical treatment.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section chooseus">
+        <div class="content">
+            <div class="top">
+                <div class="heading">
+                    Why choose Zymes Bioscience
+                </div>
+                <div class="text">
+                    The people of Zymes are believers. We take each responsibility seriously because when we make a move, it matters.
+                </div>
+                <div class="text">
+                    Zymes is evolving, growing and here to stay.
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="card" *ngFor="let card of cards">
+                    <div class="heading">
+                        {{card.name}}
+                    </div>
+                    <div class="text" *ngFor="let txt of card.text">
+                        {{txt}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section facts">
+        <div class="heading">
+            Our Journey
+        </div>
+        <div class="factImage">
+            <img src="assets/facts.webp">
+        </div>
+    </div>
+    <div class="section partners">
+        <div class="heading">
+            Our Academic Partners
+        </div>
+        <div class="partnerList">
+            <div class="partner" *ngFor="let partner of partners">
+                <img [src]="partner.image">
+            </div>
+        </div>
+    </div>
+    <div class="section team">
+
+    </div>
+</div>
