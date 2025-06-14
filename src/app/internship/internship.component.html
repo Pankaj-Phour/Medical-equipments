@@ -1,0 +1,136 @@
+<div class="parent">
+        <div class="content">
+        <div class="top">
+              <swiper-container class="mySwiper" navigation="true" space-between="30"
+    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false" loop="true">
+   <swiper-slide *ngFor="let item of carouselData;">
+    <div class="image">
+        <img [src]="item.image" alt="">
+    </div>
+   </swiper-slide>
+  </swiper-container>
+        </div>
+        <div class="middle">
+            <div class="section plain">
+                <div class="heading">
+                    Counselling and Clinical Psychology Internship in Gurgaon
+                </div>
+                <div class="data">
+                    <div class="subheading">Psychology Internship in Gurgaon | Counselling Psychology | Clinical Psychology | De-addiction | Guidance and Counselling | IGNOU MAPC</div>
+                    <div class="text">
+                        <ul>
+                            <li>Are you looking for the best organization in Gurgaon to complete your internship in psychology (counseling psychology, clinical psychology, de-addiction, or guidance and counseling)?</li>
+                            <li>Do you want to gain hands-on experience in the field of psychology?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="heading">
+                    Available Internship Programs
+                </div>
+                <div class="data">
+                    <div class="cards">
+                        <div class="box" *ngFor="let box of intershipPrograms">
+                            <div class="heading">
+                                {{box.heading}}
+                            </div>
+                            <div class="text">
+                                {{box.text}}
+                            </div>
+                            <div class="points">
+                                <ul>
+                                    <li *ngFor="let item of box.points">{{item.text}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <div class="section plain">
+                <div class="heading">
+                    Who Can Apply?
+                </div>
+                <div class="data">
+                    <div class="text">Our internship programs are open to:</div>
+                    <div class="text">
+                        <ul>
+                            <li>Graduate (BA, BSc) students in psychology and related fields</li>
+                            <li>Post-graduate (MA, MSc) students seeking practical experience</li>
+                            <li>MPhil candidates looking for specialized training</li>
+                            <li>Students pursuing certificate courses in psychology and guidance & counselling</li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <strong>Note : </strong><span style="color: gray;">We offer special batches for working professionals (pursuing MA in Clinical / Counseling Psychology from IGNOU) with flexible timings at Humana Wellness in Gurgaon.</span>
+                    </div>
+                </div>
+            </div>
+
+              <div class="section plain">
+                <div class="heading">
+                    Why Choose Us?
+                </div>
+                <div class="data">
+                    <div class="text">
+                        <ul>
+                            <li><strong>Experienced Mentors: </strong>Learn from professionals with extensive experience in their respective fields.</li>
+                            <li><strong>Hands-on Training: </strong>Engage in real-world scenarios and case studies.</li>
+                            <li><strong>Comprehensive Curriculum: </strong>Benefit from a well-rounded program that covers theoretical knowledge and practical skills.</li>
+                            <li><strong>Networking Opportunities: </strong>Connect with industry experts and peers to build your professional network.</li>
+                            <li><strong>Career Development: </strong>Gain the confidence and competence to excel in your future career.</li>
+                            <li><strong>Exposure in Rehabilitation Setup: </strong>Experience working in a real rehabilitation environment to enhance your practical knowledge and skills.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+              <div class="section plain">
+                <div class="heading">
+                    Schedule of Training
+                </div>
+                <div class="data">
+                    <div class="text">
+                        <ul>
+                            <li><strong>Time: </strong>11 am to 3 pm</li>
+                            <li><strong>Days: </strong>Monday to Saturday</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+              <div class="section plain">
+                <div class="heading">
+                    Duration and Fees
+                </div>
+                <div class="data">
+                    <div class="text">
+                        <ul>
+                            <li><strong>2 days a week: </strong>Rs. 3,500 per month</li>
+                            <li><strong>60 hours/15 days: </strong>Rs. 4,500</li>
+                            <li><strong>120 hours/1 month: </strong>Rs. 6,000</li>
+                            <li><strong>240 hours/1 month (10 am to 6 pm): </strong>Rs. 7,500</li>
+                            <li><strong>3 months: </strong>Rs. 20,000</li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <strong style="font-size: 1rem;">Note: </strong>
+                         <ul>
+                            <li>10% discount for groups of 3 students</li>
+                            <li>20% discount for groups of 5 students</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="footer">
+        <app-contact></app-contact>
+    </div>
+</div>

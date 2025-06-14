@@ -4,23 +4,33 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
+import { InternshipComponent } from './internship/internship.component';
 
 const routes: Routes = [
   {
     path:'',
-    component:HomeComponent
+    component:HomeComponent,
+    title: 'Best Rehabilitation center in Gurgaon | Home'
   },
   {
     path:'about',
-    component:AboutComponent
+    component:AboutComponent,
+    title: 'Best Rehabilitation center in Gurgaon | About'
   },
   {
     path:'products',
-    component:ProductsComponent
+    component:ProductsComponent,
+    title:'Best Rehabilitation center in Gurgaon | Team'
   },
   {
     path:'contact',
-    component:ContactComponent
+    component:ContactComponent,
+    title:'Best Rehabilitation center in Gurgaon | Contact us'
+  },
+  {
+    path:'internship',
+    component:InternshipComponent,
+    title:'Best Rehabilitation center in Gurgaon | Intership Programs'
   },
 
 ];

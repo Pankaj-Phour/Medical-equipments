@@ -3,6 +3,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 ::-webkit-scrollbar{
     width: 5px !important;
@@ -15,6 +16,11 @@
     font-family: 'Material Icons' !important;
 }
 app-contact{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+app-navbar{
     height: 100%;
     width: 100%;
     position: relative;

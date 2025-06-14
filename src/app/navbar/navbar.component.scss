@@ -274,7 +274,7 @@
 }
 
 .device {
-	position: sticky;
+	position: fixed;
 	// width: 345px;
 	width: 100vw;
 	height: 600px;
@@ -285,6 +285,7 @@
 	// border-radius: 3px;
 	// box-shadow: 0 0 0 10px rgba(0,0,0,.1);
 	padding-block: 10px;
+	z-index: 10;
 }
 
 .container {
