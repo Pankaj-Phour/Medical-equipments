@@ -1,7 +1,7 @@
 <div class="body">
     <div class="navbar">
         <div class="left">
-            <img src="/assets/logo.png" height="55" width="50" style="cursor: pointer;" (click)="reload()">
+            <img src="/assets/images/humana_wellness_2.png" height="80" width="80" style="cursor: pointer;" (click)="reload()">
         </div>
         <div class="right">
             <div class="list">
@@ -17,11 +17,11 @@
 <div class="device" [ngStyle]="{'height':navOpen ? '600px' : '60px'}">
 	<div class="container">
 		<div class="left">
-            <img src="/assets/logo.png" height="55" width="50" style="cursor: pointer;" (click)="reload()">
+            <img src="/assets/images/humana_wellness_2.png" height="80" width="80" style="cursor: pointer;" (click)="reload()">
         </div>
 		<button id="burger" class="open-main-nav" (click)="toggleNav()" [ngStyle]="{'padding-top': navOpen ? '0px' : ''}">
 			<span class="burger" *ngIf="!navOpen"></span>
-            <div class="crossIcon" *ngIf="navOpen" style="padding-top: 0px;"><img src="/assets/cross.png" height="30" width="30" ></div>
+            <div class="crossIcon" *ngIf="navOpen" style="padding-top: 0px;"><img src="/assets/images/cross.png" height="30" width="30" ></div>
 			<!-- <span class="burger-text">Menu</span> -->
 		</button>
 		<nav class="main-nav" id="main-nav">
