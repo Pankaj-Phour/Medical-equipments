@@ -99,17 +99,17 @@
     .right{
         display: flex;
         width: 60%;
-        padding: 1rem;
+        // padding: 1rem;
         justify-content: center;
         align-items: center;
         height: 100%;
-        padding: 1rem;
+        // padding: 1rem;
         form{
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
-            padding-block: 1rem;
+            // padding-block: 1rem;
             .formGroup{
                 display: flex;
                 flex-direction: column;
@@ -122,6 +122,7 @@
                     outline: none;
                     border-radius: 0.5rem;
                     font-size: 1rem;
+                    width: 90%;
                 }
                 label{
                     color: darkgray;
@@ -173,6 +174,13 @@
         }
         .right{
             width: 100%;
+            form{
+                .formGroup{
+                    input,textarea{
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }
