@@ -52,10 +52,61 @@ export class InternshipComponent implements OnInit {
       {text:'Clinical exposure in rehabilitation setup'},
       {text:'Additional exposure as needed'}
     ]},
-  ]
+  ];
+
+  universities:any = [
+    {name:'Amity University Noida'},
+    {name:'Amity University Gurugram'},
+    {name:'Christ University'},
+    {name:'Appejay University'},
+    {name:'Sushant University'},
+    {name:'Lovely Professional University'},
+    {name:'Ignou University'},
+    {name:'Symbiosis University'},
+    {name:'Manipal University'},
+    {name:'Delhi University'},
+    {name:'Gurugram University'},
+    {name:'OP Jindal University'},
+    {name:'Maharishi Dayanand University'}
+  ];
+
+  testimonials:any = [
+    {name:'Student 1',university:'University 1',video:'assets/videos/student1.mp4'},
+    {name:'Student 2',university:'University 2',video:'assets/videos/student2.mp4'},
+    {name:'Student 3',university:'University 3',video:'assets/videos/student3.mp4'},
+    {name:'Student 4',university:'University 4',video:'assets/videos/student4.mp4'},
+  ];
+
+  interns:any = [
+    {image:'assets/images/interns/intern1.jpg'},
+    {image:'assets/images/interns/intern2.jpg'},
+    {image:'assets/images/interns/intern3.jpg'},
+    {image:'assets/images/interns/intern4.jpg'},
+    {image:'assets/images/interns/intern5.jpg'},
+    {image:'assets/images/interns/intern6.jpg'},
+    {image:'assets/images/interns/intern7.jpg'},
+    {image:'assets/images/interns/intern8.jpg'},
+    {image:'assets/images/interns/intern9.jpg'},
+    {image:'assets/images/interns/intern10.jpg'},
+    {image:'assets/images/interns/intern11.jpg'},
+    {image:'assets/images/interns/intern12.jpg'},
+    {image:'assets/images/interns/intern13.jpg'},
+    {image:'assets/images/interns/intern14.jpg'},
+    {image:'assets/images/interns/intern15.jpg'},
+  ];
+  preview = false;
+  selected:any;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  previewImage(data:any){
+    this.preview = !this.preview;
+    if(data){
+      this.selected = data;
+    }
   }
 
 }

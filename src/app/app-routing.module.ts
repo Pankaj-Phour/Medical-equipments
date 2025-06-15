@@ -5,6 +5,8 @@ import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { InternshipComponent } from './internship/internship.component';
+import { TreatmentComponent } from './treatment/treatment.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
   {
@@ -31,6 +33,16 @@ const routes: Routes = [
     path:'internship',
     component:InternshipComponent,
     title:'Best Rehabilitation center in Gurgaon | Intership Programs'
+  },
+  {
+    path:'treatment',
+    component:TreatmentComponent,
+    title:'Best Rehabilitation center in Gurgaon | Treatment'
+  },
+  {
+    path:'gallery',
+    component:GalleryComponent,
+    title:'Best Rehabilitation center in Gurgaon | Gallery'
   },
 
 ];
