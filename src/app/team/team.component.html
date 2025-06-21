@@ -1,0 +1,40 @@
+<div class="parent">
+    <div class="content">
+        <div class="header">
+            <div class="heading">
+                Meet the Team at Humana Wellness
+            </div>
+        </div>
+        <div class="data">
+            <div class="cardsContainer">
+                 <div class="agentcard" *ngFor="let agent of teamMembers;let i = index"[ngStyle]="{flexDirection: i%2!==1 ? 'row' : 'row-reverse'}">
+                <div class="image">
+                    <img [src]="agent.image">
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <div class="name">{{agent.name}}</div>
+                        <div class="designation">{{agent.designation}}</div>
+                    </div>
+                <div class="details">{{agent.about}}</div>
+                <!-- <div class="links">
+                    <div class="link" (click)="contactAgent(agent,'email')">
+                        <img src="assets/emailBlue.png" height="25px" width="25px">
+                    </div>
+                    <div class="link" (click)="contactAgent(agent,'call')">
+                        <img src="assets/phoneBlue.png" height="25px" width="25px">
+                    </div>
+                    <div class="link" (click)="contactAgent(agent,'whatsapp')">
+                        <img src="assets/whatsappBlue.png" height="25px" width="25px">
+                    </div>
+                </div> -->
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <app-contact></app-contact>
+    </div>
+</div>

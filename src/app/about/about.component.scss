@@ -4,4 +4,55 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    line-height: normal;
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        height: 100%;
+        .top{
+            display: flex;
+            width: 100%;
+            .heading{
+                font-size: 1.5rem;
+            }
+        }
+        .data{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            height: fit-content;
+            align-items: center;
+            .section{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 80%;
+                gap: 1rem;
+                .left,.right{
+                    width: 45%;
+                    display: flex;
+                    padding: 1rem;
+                    .image{
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            background-color: black;
+                        }
+                    }
+                    .text{
+                        color: gray;
+                        font-size: 1rem;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
 }

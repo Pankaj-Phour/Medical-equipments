@@ -18,6 +18,7 @@ import { InternshipComponent } from './internship/internship.component';
 import { TreatmentComponent } from './treatment/treatment.component';
 import { DetailsComponent } from './details/details.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     InternshipComponent,
     TreatmentComponent,
     DetailsComponent,
-    GalleryComponent
+    GalleryComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
