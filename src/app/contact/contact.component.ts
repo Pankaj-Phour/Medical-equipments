@@ -26,7 +26,7 @@ formValidation(){
 
   submit(){
     this.submitted = true;
-    this.api.clientData('/userData',this.contactForm.value).subscribe((next:any)=>{
+    this.api.clientData('/contact',this.contactForm.value).subscribe((next:any)=>{
       console.log("response from api",next);
     })
     setTimeout(() => {

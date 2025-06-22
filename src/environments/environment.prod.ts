@@ -6,5 +6,5 @@ export const environment = {
 // Url : 'http://localhost:3000',
 
 // URL for production 
-Url : 'https://locationapi.onrender.com'
+Url : 'https://humana-wellness-backend.onrender.com'
 };

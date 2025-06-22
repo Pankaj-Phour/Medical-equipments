@@ -1,13 +1,40 @@
 <div class="parent">
     <div class="content">
         <div class="top">
-             <div class="WIP">
-                <img src="assets/work_in_progress.webp" alt="">
-                <div class="text">WORK IN PROGRESS</div>
-             </div>
+            <!-- <div class="heading">
+                Humana Wellness : 
+                <div class="subHeading">Empowering you on the road to recovery and wellness.</div>
+            </div> -->
+        </div>
+        <div class="data">
+            <div class="section">
+                <div class="textSection">
+                <div class="left">
+                    <div class="image">
+                        <img src="assets/images/gallery/image15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="heading">Empowering you on the road to recovery and wellness</div>
+                    <div class="text">Humana wellness is one of the leading alcohol and drug de addiction and rehabilitation centre in Gurgaon. Our rehab center in Delhi NCR in the vicinity of all the required essentials for rehabilitation center such as easy access to hospitals [Fortis, medanta, max, Artemis, Paras] in a radius of two kilometers. The overall ambience has calm and soothing environment. Our mission is to break the stigma surrounding mental health treatment, providing a supportive environment for individuals struggling with substance abuse and related mental health issues. We offer a safe and nurturing space for our clients to recover and reintegrate into society. Our comprehensive programs empower individuals, families, and caregivers with the knowledge, skills, and resources needed to manage mental health challenges and promote overall well-being. By fostering a community of understanding and support, we aim to destigmatize mental health and facilitate healing.</div>
+                </div>
+            </div>
+            </div>
+
+            <div class="section">
+                <div class="textSection">
+                    <div class="heading" style="margin-bottom: 2rem;">Recover with confidence at our esteemed rehabilitation center</div>
+                    <div class="cardsContainer">
+                        <div class="box" *ngFor="let box of treatments;">
+                            <div class="heading">{{box.name}}</div>
+                            <div class="text">{{box.text}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- <div class="footer">
+    <div class="footer">
         <app-contact></app-contact>
-    </div> -->
+    </div>
 </div>
