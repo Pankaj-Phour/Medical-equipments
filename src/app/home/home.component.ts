@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
     {name:'Drug addiction',text:"Alcohol addiction, also known as alcohol use disorder (AUD), is a chronic and often progressive disease characterized by a person's inability to control their consumption of alcohol despite negative consequences.",image:''},
     {name:'De-addiction treatment',text:"Deaddiction treatment typically involves a combination of interventions such as Medically supervised withdrawal from substances.Addressing underlying issues, developing coping skills. Managing withdrawal symptoms, cravings, or co-occurring conditions and promoting healthy habits, stress management.",image:''},
     {name:'Bipolar disorder',text:"Bipolar disorder is a mental health condition that causes extreme mood swings, ranging from manic or hypomanic episodes to depressive episodes.",image:''},
-    {name:'Schizophrenia',text:"Schizophrenia is a chronic mental health disorder that affects how a person thinks, feels, and behaves. It can cause symptoms such asHallucinations,Delusions ,Disorganized thinking and speech",image:''},
+    {name:'Schizophrenia',text:"Schizophrenia is a chronic mental health disorder that affects how a person thinks, feels, and behaves. It can cause symptoms such as Hallucinations,Delusions ,Disorganized thinking and speech",image:''},
     {name:'Personality disorder',text:"Personality disorders are mental health conditions that affect an individual's thoughts, feelings, and behaviors, leading to difficulties in relationships, work, and daily life.",image:''},
   ]
 

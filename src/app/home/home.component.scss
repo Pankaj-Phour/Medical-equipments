@@ -99,7 +99,7 @@
                         width: 20%;
                         min-width: 290px;
                         cursor: pointer;
-                        height: 190px;
+                        height: 200px;
                         .heading{
                             font-size: 1.4rem;
                             font-weight: 500;
@@ -109,6 +109,10 @@
                             font-size: 0.9rem;
                             color: gray;
                             text-align: justify;
+                            display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 7;
+                                overflow: hidden;
                         }
                     }
                 }
