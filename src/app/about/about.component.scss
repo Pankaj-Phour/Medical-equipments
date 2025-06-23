@@ -1,9 +1,9 @@
 .parent{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     line-height: normal;
     .content{
         display: flex;
@@ -30,12 +30,24 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 80%;
+                width: 90%;
                 gap: 1rem;
+                padding: 1rem;
+                flex-wrap: wrap;
+                .heading{
+                    font-size: 2.5rem;
+                }
+                .text{
+                    color: gray;
+                    font-size: 1rem;
+                    text-align: justify;
+                }
                 .left,.right{
-                    width: 45%;
+                    width: 40%;
                     display: flex;
-                    padding: 1rem;
+                    flex-direction: column;
+                    gap: 2rem;
+                    min-width: 320px;
                     .image{
                         width: 100%;
                         height: 100%;
@@ -46,10 +58,40 @@
                             background-color: black;
                         }
                     }
+                }
+                .right{
+                    width: 55%;
+                }
+            }
+        }
+    }
+
+    .footer{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+@media only screen and (max-width:768px){
+    .parent{
+        .content{
+            .data{
+                .section{
+                    width: 100%;
+                    .heading{
+                        font-size: 2rem;
+                    }
                     .text{
-                        color: gray;
-                        font-size: 1rem;
-                        text-align: justify;
+                        font-size: 0.9rem;
+                    }
+                    .left,.right{
+                        width: 100%;
+                        gap: 1rem;
                     }
                 }
             }
