@@ -84,8 +84,8 @@ export class InternshipComponent implements OnInit {
     {image:'assets/images/interns/guided_meditation.jpg',text:'Guided Meditation'},
     {image:'assets/images/interns/mindfullness.jpg',text:'Mindfulness'},
     {image:'assets/images/interns/role_play.jpg',text:"Role Play"},
-    {image:'assets/images/interns/workshop.jpg',text:'Workshop on Drug abuse and its prevention'},
-    {image:'assets/images/interns/workshop2.jpg',text:'Workshop on Drug abuse and its prevention'},
+    {image:'assets/images/interns/workshop.jpg',text:'Awareness Program on Drug abuse and its prevention'},
+    {image:'assets/images/interns/workshop2.jpg',text:'Awareness Program on Drug abuse and its prevention'},
     {image:'assets/images/interns/intern1.jpg',text:'Psychodiagnostic Test'},
     {image:'assets/images/interns/intern2.jpg'},
     {image:'assets/images/interns/intern3.jpg'},
@@ -102,8 +102,8 @@ export class InternshipComponent implements OnInit {
     {image:'assets/images/interns/intern14.jpg'},
     {image:'assets/images/interns/intern15.jpg'},
     {image:'assets/images/interns/intern16.jpg'},
-    {image:'assets/images/interns/intern17.jpg'},
-    {image:'assets/images/interns/intern18.jpg'},
+    {image:'assets/images/interns/intern17.jpg',text:'Workshop'},
+    {image:'assets/images/interns/intern18.jpg',text:'Relaxation Therapy'},
     {image:'assets/images/interns/intern19.jpg'},
   ];
   preview = false;
