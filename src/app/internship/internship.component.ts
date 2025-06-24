@@ -75,6 +75,9 @@ export class InternshipComponent implements OnInit {
     {name:'Student 2',university:'University 2',video:'assets/videos/student2.mp4'},
     {name:'Student 3',university:'University 3',video:'assets/videos/student3.mp4'},
     {name:'Student 4',university:'University 4',video:'assets/videos/student4.mp4'},
+    {name:'Student 5',university:'University 5',video:'assets/videos/student5.mp4'},
+    {name:'Student 6',university:'University 6',video:'assets/videos/student6.mp4'},
+    {name:'Student 7',university:'University 7',video:'assets/videos/student7.mp4'},
   ];
 
   interns:any = [
