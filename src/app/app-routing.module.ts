@@ -8,6 +8,7 @@ import { InternshipComponent } from './internship/internship.component';
 import { TreatmentComponent } from './treatment/treatment.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { TeamComponent } from './team/team.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   {
@@ -49,6 +50,11 @@ const routes: Routes = [
     path:'team',
     component:TeamComponent,
     title:'Best Rehabilitation center in Gurgaon | Team'
+  },
+  {
+    path:'service',
+    component:ServicesComponent,
+    title:'Best Rehabilitation center in Gurgaon | Services'
   },
 
 ];

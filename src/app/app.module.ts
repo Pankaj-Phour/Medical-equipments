@@ -19,6 +19,7 @@ import { TreatmentComponent } from './treatment/treatment.component';
 import { DetailsComponent } from './details/details.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { TeamComponent } from './team/team.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TeamComponent } from './team/team.component';
     TreatmentComponent,
     DetailsComponent,
     GalleryComponent,
-    TeamComponent
+    TeamComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,7 @@ import { TeamComponent } from './team/team.component';
     ReactiveFormsModule,
     MatProgressSpinnerModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
