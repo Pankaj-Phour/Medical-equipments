@@ -1,0 +1,49 @@
+<div class="parent">
+    <div class="content">
+        <div class="top">
+            <div class="heading">
+                TREATMENT METHODOLOGY
+            </div>
+            <div class="innerContent">
+            <div class="left">
+                <div class="image">
+                    <img src="assets/images/treatment_landing.avif" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="heading">
+                    We always care about your mental health
+                </div>
+                <div class="text">
+                    Humana Wellness is one of the leading rehab center in Gurgaon. We have a proper treatment methodology for our patients to ensure stable recovery from any sort of addiction and mental illness. The treatment plan includes complete body checkup, Withdrawal management, Detoxification, Group sessions, Individual sessions, Family sessions, with professionals to strengthen areas of improvement for our patients. Our treatment plan has individual approach for every patient and the data is kept confidential to maintain anonymity as our first priority. We provide outpatient and inpatient service as per the need of the patient and required results for treatment of addiction and mental health disorders. Therapies can vary as per the need of the patient which includes CBT, REBT, Group therapy, Family therapy, Relaxation therapy and other alternative therapies. Psychometric evaluation is done when and where required by the mental health professionals.
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <div class="middle">
+            <div class="section">
+                <div class="heading">
+                    TREATMENTS
+                </div>
+                <div class="data">
+                    <div class="subheading">Happiness begins here</div>
+                    <div class="cards">
+                        <div class="box" *ngFor="let treatment of treatments;">
+                            <div class="boxImage">
+                                <img [src]="treatment.image" alt="">
+                            </div>
+                            <div class="boxHeading">{{treatment.heading}}</div>
+                            <div class="boxText">{{treatment.details.top.text}}</div>
+                            <div class="bottom">Read more...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <app-contact></app-contact>
+        </div>
+    </div>
+</div>

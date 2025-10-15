@@ -1,93 +1,79 @@
 <div class="parent">
-    <div class="section upper">
-        <div class="content">
-            <div class="heading">
-                Unparalleled
-            </div>
-            <div class="heading">
-                Commitment
-            </div>
-            <div class="text">
-                Meet Zymes. Visionary striving to provide innovative therepies for accurate and life-threatning illnesses.
-            </div>
+    <div class="content">
+        <div class="top">
+            <!-- <div class="heading">
+                Humana Wellness : 
+                <div class="subHeading">Empowering you on the road to recovery and wellness.</div>
+            </div> -->
         </div>
-    </div>
-    <div class="section second">
-        <div class="content">
-            <div class="box left">
-                <div class="boxcontent">
+        <div class="data">
+            <div class="section">
+                <div class="textSection">
+                <div class="left">
+                    <div class="image">
+                        <img src="assets/images/garden.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="heading">Empowering you on the road to recovery and wellness</div>
+                    <div class="text">Humana wellness is one of the leading alcohol and drug de addiction and rehabilitation centre in Gurgaon. Our rehab center in Delhi NCR in the vicinity of all the required essentials for rehabilitation center such as easy access to hospitals [Fortis, medanta, max, Artemis, Paras] in a radius of two kilometers. The overall ambience has calm and soothing environment. Our mission is to break the stigma surrounding mental health treatment, providing a supportive environment for individuals struggling with substance abuse and related mental health issues. We offer a safe and nurturing space for our clients to recover and reintegrate into society. Our comprehensive programs empower individuals, families, and caregivers with the knowledge, skills, and resources needed to manage mental health challenges and promote overall well-being. By fostering a community of understanding and support, we aim to destigmatize mental health and facilitate healing.</div>
+                </div>
+            </div>
+            </div>
 
-                    <div class="topImage">
-                        <img src="assets/innerBox1.webp">
-                    </div>
-                    <div class="bottomHeading">
-                        Our Impact
-                    </div>
-                    <div class="bottomText">
-                        Our innovation in antibiotic therapy has helped medical fraternity for effective medical treatment.
-                    </div>
-                </div>
-            </div>
-            <div class="box right">
-                <div class="boxcontent">
-
-                    <div class="topImage">
-                        <img src="assets/innerBox2.webp">
-                    </div>
-                    <div class="bottomHeading">
-                        Our Products
-                    </div>
-                    <div class="bottomText">
-                        Our innovation in antibiotic therapy has helped medical fraternity for effective medical treatment.
+            <div class="section">
+                <div class="textSection">
+                    <div class="heading" style="margin-bottom: 2rem;">Recover with confidence at our esteemed rehabilitation center</div>
+                    <div class="cardsContainer">
+                        <div class="box" *ngFor="let box of treatments;">
+                            <div class="heading">{{box.name}}</div>
+                            <div class="text">{{box.text}}</div>
+                        </div>
                     </div>
                 </div>
             </div>
+<!-- 
+            <div class="section">
+                <div class="textSection">
+                    <div class="heading">What our clients and students say about us</div>
+                    <div class="data">
+                        <div class="overall">
+                            <div class="leftSide">
+                                <div class="logo"></div>
+                                <div class="rating"></div>
+                            </div>
+                            <div class="rightSide">
+                                <button class="submitButton">Review us on Google</button>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <div class="singleReview" *ngFor="let review of reviews">
+                                <div class="topSection">
+                                    <div class="leftTop">
+                                        <div class="image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="rightTop">
+                                        <div class="nameSection">
+                                            <div class="name">{{review.user}}</div>
+                                            <div class="tick">
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="time">{{review.time}}</div>
+                                    </div>
+                                </div>
+                                <div class="ratingSection">{{review.rating}}</div>
+                                <div class="textSection">{{review.text}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </div>
-    <div class="section chooseus">
-        <div class="content">
-            <div class="top">
-                <div class="heading">
-                    Why choose Zymes Bioscience
-                </div>
-                <div class="text">
-                    The people of Zymes are believers. We take each responsibility seriously because when we make a move, it matters.
-                </div>
-                <div class="text">
-                    Zymes is evolving, growing and here to stay.
-                </div>
-            </div>
-            <div class="bottom">
-                <div class="card" *ngFor="let card of cards">
-                    <div class="heading">
-                        {{card.name}}
-                    </div>
-                    <div class="text" *ngFor="let txt of card.text">
-                        {{txt}}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section facts">
-        <div class="heading">
-            Our Journey
-        </div>
-        <div class="factImage">
-            <img src="assets/facts.webp">
-        </div>
-    </div>
-    <div class="section partners">
-        <div class="heading">
-            Our Academic Partners
-        </div>
-        <div class="partnerList">
-            <div class="partner" *ngFor="let partner of partners">
-                <img [src]="partner.image">
-            </div>
-        </div>
-    </div>
-    <div class="section team">
-
+    <div class="footer">
+        <app-contact></app-contact>
     </div>
 </div>

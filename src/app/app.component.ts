@@ -13,10 +13,5 @@ export class AppComponent {
 
   }
   ngOnInit(){
-    console.log("Hello from app component");
-    this._api.healthChecker('/healthChecker').subscribe((res:any)=>{
-      console.log("Hello from health checker api",res);
-      
-    })
   }
 }

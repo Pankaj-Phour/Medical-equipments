@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ApiService } from '../services/api.service';
 
@@ -8,7 +8,7 @@ import { ApiService } from '../services/api.service';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-
+@ViewChild('heading') heading:ElementRef;
   contactForm:FormGroup;
   submitted:boolean = false;
   constructor(private _fb:FormBuilder, private api:ApiService) { }
@@ -16,7 +16,8 @@ formValidation(){
   this.contactForm = this._fb.group({
     name:['',Validators.required],
     email:['',Validators.compose([Validators.email, Validators.required])],
-    message:['',Validators.required]
+    contact:['',Validators.required],
+    message:['']
   })
 }
   ngOnInit(): void {
@@ -25,7 +26,7 @@ formValidation(){
 
   submit(){
     this.submitted = true;
-    this.api.clientData('/userData',this.contactForm.value).subscribe((next:any)=>{
+    this.api.clientData('/contact',this.contactForm.value).subscribe((next:any)=>{
       console.log("response from api",next);
     })
     setTimeout(() => {

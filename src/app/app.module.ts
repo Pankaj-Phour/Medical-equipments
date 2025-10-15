@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InternshipComponent } from './internship/internship.component';
+import { TreatmentComponent } from './treatment/treatment.component';
+import { DetailsComponent } from './details/details.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { TeamComponent } from './team/team.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +29,13 @@ import { ProductsComponent } from './products/products.component';
     ContactComponent,
     HomeComponent,
     AboutComponent,
-    ProductsComponent
+    ProductsComponent,
+    InternshipComponent,
+    TreatmentComponent,
+    DetailsComponent,
+    GalleryComponent,
+    TeamComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -29,9 +43,13 @@ import { ProductsComponent } from './products/products.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatIconModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

@@ -1,12 +1,16 @@
 <div class="body">
     <div class="navbar">
         <div class="left">
-            <img src="/assets/logo.png" height="55" width="50" style="cursor: pointer;" (click)="reload()">
+            <img src="/assets/images/logo.jpg" height="80" width="80" style="cursor: pointer;" (click)="reload()">
         </div>
         <div class="right">
             <div class="list">
                 <div class="item" routerLink="/">Home</div>
-                <div class="item" routerLink="/products">Our Products</div>
+                <div class="item" routerLink="/internship">Internship Programs</div>
+                <div class="item" routerLink="/treatment">Treatments</div>
+                <div class="item" routerLink="/service">Services</div>
+                <div class="item" routerLink="/team">Our Team</div>
+                <div class="item" routerLink="/gallery">Gallery</div>
                 <div class="item" routerLink="/about">About us</div>
                 <div class="item" routerLink="/contact">Contact us</div>
             </div>
@@ -14,14 +18,14 @@
     </div>
 </div>
 
-<div class="device" [ngStyle]="{'height':navOpen ? '600px' : '60px'}">
+<div class="device" [ngStyle]="{'height':navOpen ? '100%' : '80px','box-sizing':'border-box'}">
 	<div class="container">
 		<div class="left">
-            <img src="/assets/logo.png" height="55" width="50" style="cursor: pointer;" (click)="reload()">
+            <img src="/assets/images/logo.jpg" height="80" width="80" style="cursor: pointer;" (click)="reload()">
         </div>
 		<button id="burger" class="open-main-nav" (click)="toggleNav()" [ngStyle]="{'padding-top': navOpen ? '0px' : ''}">
 			<span class="burger" *ngIf="!navOpen"></span>
-            <div class="crossIcon" *ngIf="navOpen" style="padding-top: 0px;"><img src="/assets/cross.png" height="30" width="30" ></div>
+            <div class="crossIcon" *ngIf="navOpen" style="padding-top: 0px;"><img src="/assets/images/cross.png" height="30" width="30" ></div>
 			<!-- <span class="burger-text">Menu</span> -->
 		</button>
 		<nav class="main-nav" id="main-nav">
@@ -29,8 +33,20 @@
 				<li routerLink="/" (click)="toggleNav()">
 					<p>Home</p>
 				</li>
-				<li routerLink="/products" (click)="toggleNav()">
-					<p>Our Products</p>
+				<li routerLink="/internship" (click)="toggleNav()">
+					<p>Internship Programs</p>
+				</li>
+				<li routerLink="/treatment" (click)="toggleNav()">
+					<p>Treatments</p>
+				</li>
+				<li routerLink="/service" (click)="toggleNav()">
+					<p>Services</p>
+				</li>
+				<li routerLink="/team" (click)="toggleNav()">
+					<p>Our Team</p>
+				</li>
+				<li routerLink="/gallery" (click)="toggleNav()">
+					<p>Gallery</p>
 				</li>
 				<li routerLink="/about" (click)="toggleNav()">
 					<p>About us</p>
